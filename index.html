@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twigs Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="header">
+        <h1>Twigs Tic Tac Toe</h1>
+    </header>
+
+    <div id="board">
+        <div data-index="1" class="tile right-border bottom-border"></div>
+        <div data-index="2" class="tile right-border bottom-border"></div>
+        <div data-index="3" class="tile bottom-border"></div>
+        <div data-index="4" class="tile right-border bottom-border"></div>
+        <div data-index="5" class="tile right-border bottom-border"></div>
+        <div data-index="6" class="tile bottom-border"></div>
+        <div data-index="7" class="tile right-border"></div>
+        <div data-index="8" class="tile right-border"></div>
+        <div data-index="9" class="tile"></div>
+        <div class="strike" id="strike"></div>
+    </div>
+
+    <div id="game-over-area" class="hidden">
+        <h2 id="game-over-text">Winner is X</h2>
+        <button id="play-again">Play Again</button>
+    </div>
     
+    <footer>
+        Copyright @ 2024 Twig
+    </footer>
+    <script src="app.js"></script>
 </body>
 </html>
